@@ -11,7 +11,7 @@ cargo run
 ## Run specific script
 
 ```sh
-rustc src/file.rs; ./file; rm ./file
+sh run.sh src/file.rs
 ```
 
 ## Instalar Rust 
