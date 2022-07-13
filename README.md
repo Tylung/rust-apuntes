@@ -1,6 +1,6 @@
 # Apuntes de Rust 
 
-<img src=".\assets\rustacean-flat-happy.svg" width="20%" alt="ferris-rust-mascot">
+<img src=".\assets\rustacean-flat-happy.svg" width="40%" alt="ferris-rust-mascot">
 
 ## Run app
 
