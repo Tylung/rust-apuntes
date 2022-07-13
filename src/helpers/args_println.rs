@@ -1,5 +1,5 @@
 
-fn main(){
+pub fn main(){
     let lenguaje = "Rust";
     println!("Aprendiendo {lenguaje}");
 }
