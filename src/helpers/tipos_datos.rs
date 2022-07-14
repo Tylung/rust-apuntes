@@ -1,6 +1,5 @@
 
 
-
 pub fn main(){
     // existen bastantes tipos de datos en rust
     /*
@@ -18,7 +17,7 @@ pub fn main(){
 
 fn enteros() {
     // Los numeros enteros se declaran de la siguiente manera
-    let num: i32 = 8;
+    let num: i8 = 64;
     // el i32 significa que es un numero entero de 32 bits, y la i significa que puede tener signo, puede ser negativo o positivo
     // exiten varios tipos de numeros con signo o signed 
     /*
