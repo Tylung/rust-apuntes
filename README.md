@@ -14,6 +14,12 @@ cargo run
 sh run.sh src/file.rs
 ```
 
+> Las notas sobre el lenguaje de Rust se encuentran en la wiki!
+
+[Wiki](https://github.com/Tylung/rust-apuntes/wiki) 🦀
+
+Cualquier duda o aporte a la documentación, código, etc. Pueden realizar un pull request, para agregarlo al repositorio :smiley: 
+
 ## Instalar Rust 
 
 ### Linux, Unix o Wsl
