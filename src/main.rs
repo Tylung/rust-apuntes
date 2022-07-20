@@ -1,21 +1,36 @@
 use std::io;
 use std::io::Write;
+use rand::Rng;
+use std::cmp::Ordering;
 
 fn main() {
     println!("Adivina el numerust!");
 
+    let secret_number = rand::thread_rng().gen_range(1..=10);
+    // println!("\nEl numero secreto es {secret_number}\n");
+    // generamos un numero al azar del 1 al 10
+    println!("Del 1 al 10");
     print!("Ingresa el numero: ", );
     io::stdout().flush().unwrap();
+    // evitamos que se vaya a otra linea el cursor
 
     let mut num_elegido = String::new();
+    // la variable num_elegido es una nueva instancia del struct String, un nuevo string
 
     io::stdin()
         .read_line(&mut num_elegido)
+        // leemos la linea del prompt
         .expect("Fallo al leer el prompt");
-    //     let mut guess = String::new();
+    
+    let num_elegido: u32 = num_elegido.trim().parse().expect("Please type a number!");
+    // shadow variable para convertirlo en numero y poder compararlo con el numero secreto
 
-    // declaramos la variable par ael numero como una nueva instancia del numero
-    println!("El numero que elegiste es {}", num_elegido);
+    println!("El numero que elegiste es {num_elegido}");
 
+    match num_elegido.cmp( &secret_number) {
+        Ordering::Less => println!("Muy bajo, el numero era {secret_number}"),
+        Ordering::Greater => println!("Muy alto, el numero era {secret_number}"),
+        Ordering::Equal => println!("Has Acertado :D el numero era {secret_number}")
+    }
 
 }
