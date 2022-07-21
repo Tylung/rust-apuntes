@@ -33,7 +33,7 @@ fn main() {
     let num_elegido: u32 = num_elegido.trim().parse().expect("Please type a number!");
     // shadow variable para convertirlo en numero y poder compararlo con el numero secreto
 
-    println!("{} {}", "El numero que elegiste es".blue().dimmed() , num_elegido.yellow() );
+    println!("{} {}", "El numero que elegiste es".dimmed() , num_elegido.yellow() );
 
     match num_elegido.cmp( &secret_number) {
         Ordering::Less => println!("{}, el numero era {}", "Muy bajo".red(), secret_number.bright_red()),

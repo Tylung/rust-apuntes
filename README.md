@@ -1,7 +1,9 @@
 # Apuntes de Rust - Guessing game 
 
 
-<img src="./assets/preview-game.png" width="60%"> <img src="./assets/ferris-confused.png" width="25%" alt="ferris-rust-mascot">
+<img src="./assets/preview-game.png"> 
+
+<img src="./assets/ferris-confused.png" width="25%" alt="ferris-rust-mascot">
 
 ## Run game
 
