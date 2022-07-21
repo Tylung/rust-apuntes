@@ -8,7 +8,7 @@
 cargo run
 ```
 
-### Si quiere limpiar la terminal y ejecutar el juego agregue el argumento c ( clear )
+Si quiere limpiar la terminal y ejecutar el juego agregue el argumento c ( clear )
 
 ```
 cargo run c # ./target/debug/app c
