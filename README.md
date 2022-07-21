@@ -11,7 +11,7 @@ cargo run
 Si quiere limpiar la terminal y ejecutar el juego agregue el argumento c ( clear )
 
 ```
-cargo run c # ./target/debug/app c
+cargo run c # ./target/debug/guessing-game c
 ```
 
 ## Run specific script
