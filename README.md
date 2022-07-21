@@ -1,11 +1,17 @@
 # Apuntes de Rust - Guessing game 
 
-<img src=".\assets\ferris-confused.png" width="20%" alt="ferris-rust-mascot">
+<img src=".\assets\ferris-confused.png" width="30%" alt="ferris-rust-mascot">
 
 ## Run game
 
 ```
 cargo run
+```
+
+### Si quiere limpiar la terminal y ejecutar el juego agregue el argumento c ( clear )
+
+```
+cargo run c # ./target/debug/app c
 ```
 
 ## Run specific script
