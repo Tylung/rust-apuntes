@@ -2,8 +2,15 @@ use std::io;
 use std::io::Write;
 use rand::Rng;
 use std::cmp::Ordering;
+use std::env;
 
 fn main() {
+    let args: Vec<String> = env::args().collect();
+    if &args.len() > &1 {
+        if &args[1] == "c" {
+            clear_scr();
+        }
+    }
     println!("Adivina el numerust!");
 
     let secret_number = rand::thread_rng().gen_range(1..=10);
@@ -34,3 +41,12 @@ fn main() {
     }
 
 }
+
+fn clear_scr(){
+    if cfg!(windows) {
+        std::process::Command::new("cls").status().unwrap();
+    } else if cfg!(unix) {
+        std::process::Command::new("clear").status().unwrap();
+    }
+}
+
