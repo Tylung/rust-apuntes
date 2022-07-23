@@ -124,7 +124,7 @@ fn clear_scr() {
 fn obt_opciones() -> ArgMatches {
     let opts = Command::new("guessing-game")
     // creamos las optiones de la app
-        .version("0.0.1")
+        .version("0.1.0")
         .author("Zack @Tylung in Github")
         .about("Este es un juego de terminal hecho en rust! 🦀")
         .arg(
