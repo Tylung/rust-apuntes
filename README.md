@@ -14,7 +14,14 @@ cargo run
 Una vez compilado, si quiere limpiar la terminal antes de jugar, ejecute el juego con la flag -c o --clear 
 
 ```
-./target/debug/guessing-game c
+./target/debug/guessing-game -c # --clear
+```
+
+Puede jugar de manera infinita pasando la flag -i o --infinity
+
+```
+./target/debug/guessing-game -i # --infinity
+
 ```
 
 ## Run specific script

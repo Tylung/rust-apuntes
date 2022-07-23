@@ -95,7 +95,7 @@ fn infinite_game(){
             }
         }
 
-        print!("\nDesea jugar otravez?(s/N) ");
+        print!("{}{}","\nDesea jugar otravez?".bright_green(), "(s/N) ".cyan().dimmed());
         io::stdout().flush().unwrap();
 
         io::stdin()
