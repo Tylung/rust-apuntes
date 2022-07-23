@@ -5,16 +5,16 @@
 
 <img src="./assets/ferris-confused.png" width="25%" alt="ferris-rust-mascot">
 
-## Run game
+## Compile and run game
 
 ```
 cargo run
 ```
 
-Si quiere limpiar la terminal y ejecutar el juego agregue el argumento c ( clear )
+Una vez compilado, si quiere limpiar la terminal antes de jugar, ejecute el juego con la flag -c o --clear 
 
 ```
-cargo run c # ./target/debug/guessing-game c
+./target/debug/guessing-game c
 ```
 
 ## Run specific script
