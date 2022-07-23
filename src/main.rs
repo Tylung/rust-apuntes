@@ -102,7 +102,9 @@ fn infinite_game(){
             .read_line( &mut resp)
             .expect("No es una entrada valida");
 
-        if resp.len() == 2 && resp.contains("s") || resp.contains("S") {
+        resp = resp.trim().to_ascii_lowercase();
+
+        if resp.chars().count() == 1 && resp.contains("s") {
             println!("{}", "\nCreando nuevo juego...".bright_cyan());
             io::stdout().flush().unwrap();
             std::thread::sleep(Duration::from_millis(500));
