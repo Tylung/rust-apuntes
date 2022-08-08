@@ -1,5 +1,4 @@
 
-
 pub fn main(){
     // existen bastantes tipos de datos en rust
     /*
@@ -11,7 +10,10 @@ pub fn main(){
 
     enteros();
     flotantes();
-
+    booleanos();
+    caracter();
+    tuplas();
+    arreglos();
 }
 
 
@@ -37,4 +39,43 @@ fn enteros() {
 
 fn flotantes() {
     // los numeros de coma flotante son los numeros con decimales
+
+    let float_num = 23.3; // implicitamente f64
+    let f32_num: f32 = 3.1416;
+ 
+    println!("El numero flotante base 64 es: {float_num}");
+    println!("El numero flotante base 32 es: {f32_num}");
+
 }
+
+fn booleanos() {
+
+    let result = false;
+    
+    println!("El numero 3 es par? {result}");
+} 
+
+fn caracter() {
+
+    let letra = 'a';
+
+    println!("La primera letra del abecedario es {letra}");
+}
+
+fn tuplas() {
+    let tup: (i32, char, bool) = (150, 'e', false); 
+
+    println!("La tupla es: {:?}", tup)
+
+    // el :? se coloca para que devualva una salida valida y se pueda mirar la tupla en la consola y si no se puede devuelve un error
+}
+
+
+fn arreglos() {
+    let arr = [1, 2, 3, 4, 5]; // implicita [i32, 5]
+
+    println!("El arreglo arr contiene {arr:#?}");
+    // el # se agrega para que lo imprima de una manera clara, pero es opcional
+}
+
+
