@@ -1,9 +1,8 @@
 // Declarar variables en rust
 
-pub fn main(){
+pub fn main() {
     imp_num();
 }
-
 
 fn imp_num() {
     let numero = 64;
@@ -23,4 +22,3 @@ fn imp_num() {
     let num_shadow = num_shadow + 88;
     println!("El num_shadow es {num_shadow}");
 }
-

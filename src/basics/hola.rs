@@ -1,5 +1,4 @@
-
-pub fn saludar(){
+pub fn saludar() {
     println!("Hola Dev!!")
 }
 
