@@ -8,7 +8,7 @@ mod helpers {
     // pub mod args_println;
 }
 // creando modulo 📂 para helpers, extrallendo el archivo a ejecutar
-use helpers::ownership::main as func
+use helpers::ownership::main as func;
 
 fn main() {
     func();
