@@ -8,7 +8,7 @@ pub fn main() {
     nombre.truncate(len - 1); // delete \n
 
     if nombre.is_empty() {
-        println!("Nombre no probisto usando pepe");
+        println!("Nombre no provisto usando pepe");
         nombre = String::from("pepe");
     } 
     take_name(&nombre); 

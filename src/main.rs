@@ -8,7 +8,7 @@ mod basics {
     // pub mod tipos_datos;
     // pub mod variables;
 }
-// creando modulo 📂 para helpers, extrallendo el archivo a ejecutar
+// creando modulo 📂 para basics, extrallendo el archivo a ejecutar
 use basics::ownership::main as ownership;
 use basics::borrowing::main as borrowing;
 
