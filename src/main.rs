@@ -1,4 +1,4 @@
-mod helpers {
+mod basics {
     // pub mod variables;
     // pub mod tipos_dato;
     // pub mod functions;
@@ -8,8 +8,8 @@ mod helpers {
     // pub mod args_println;
 }
 // creando modulo 📂 para helpers, extrallendo el archivo a ejecutar
-use helpers::ownership::main as func;
+use basics::ownership::main as ownership;
 
 fn main() {
-    func();
+    ownership();
 }
