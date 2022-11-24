@@ -1,6 +1,6 @@
 
 fn otra_funcion() {
-    println!("Esta es otra funcion diferente a la main");
+    println!("Esta es otra función diferente a la main");
 }
 
 fn suma(a: u8, b: u8) -> u8 { // tipo de retorno 
@@ -9,7 +9,7 @@ fn suma(a: u8, b: u8) -> u8 { // tipo de retorno
 }
 
 fn resta(a: u8, b: u8) -> u8 {
-    println!("funcion resta");
+    println!("función resta");
     let num1 = a;
     let num2: u8 = b;
 
@@ -24,7 +24,7 @@ fn variables_declaration() -> () {
         x + 1
     };   
         
-    println!("The value of y is: {y}");
+    println!("El valor de y es: {y}");
 }
 
 pub fn main() {
