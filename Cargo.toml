@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 rand = "0.8.5"
 owo-colors = "3"
-clap = "3.2.14"
+clap = "4.0.32"
