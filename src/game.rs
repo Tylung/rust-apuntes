@@ -22,7 +22,15 @@ pub fn init_game(opts: ArgMatches) {
             .map(|n| n.parse().expect("Error converting to u8"))
             .collect();
 
-        let (secret_num, init, limit) = get_random_num(range);
+        // let (secret_num, init, limit) = get_random_num(range).expect("Test err");
+
+        let (secret_num, init, limit) = match get_random_num(range) {
+            Ok(result) => result,
+            Err(e) => {
+                println!("Error: {}", e);
+                return;
+            }
+        };
 
         game(secret_num, init, limit);
     }
@@ -37,7 +45,13 @@ pub fn init_game(opts: ArgMatches) {
             .map(|n| n.parse().expect("Error converting to u8"))
             .collect();
 
-        let (_secret_num, init, limit) = get_random_num(range);
+        let (_secret_num, init, limit) = match get_random_num(range) {
+            Ok(result) => result,
+            Err(e) => {
+                println!("Error: {}", e);
+                return;
+            }
+        };
 
         infinite_game(init, limit);
     }
@@ -47,7 +61,7 @@ pub fn init_game(opts: ArgMatches) {
     }
 
     if !opts.get_flag("infinity") && !opts.contains_id("range") {
-        let (secret_num, init, limit) = get_random_num(vec![1, 10]);
+        let (secret_num, init, limit) = get_random_num(vec![1, 10]).expect("Error Empty Array");
 
         game(secret_num, init, limit);
     }
@@ -57,7 +71,7 @@ pub fn game(num: u32, init: u32, limit: u32) -> bool {
     let mut num_secreto: u32 = num;
 
     if num == 0 {
-        let res = get_random_num(vec![init, limit]);
+        let res = get_random_num(vec![init, limit]).expect("Error in get_random_num");
         num_secreto = res.0
     }
 
@@ -122,7 +136,7 @@ pub fn infinite_game(init_param: u32, limit_param: u32) {
         let mut resp = String::new();
         clear_scr();
 
-        let (num, init, limit) = get_random_num(vec![init_param, limit_param]);
+        let (num, init, limit) = get_random_num(vec![init_param, limit_param]).expect("EmptyError");
 
         let is_winner = game(num, init, limit);
 
