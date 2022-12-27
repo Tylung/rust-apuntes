@@ -4,8 +4,8 @@ use std::cmp::Ordering;
 use std::io::Write;
 use std::{io, time::Duration};
 
-use crate::utils::clear::clear_scr;
-use crate::utils::random::get_random_num;
+use crate::clear::clear_scr;
+use crate::random::get_random_num;
 
 pub fn init_game(opts: ArgMatches) {
     if opts.get_flag("clear") {

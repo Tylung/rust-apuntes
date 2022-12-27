@@ -1,6 +1,7 @@
 mod arg;
 mod game;
-mod utils;
+mod random;
+mod clear;
 use arg::get_opts;
 use game::init_game;
 
