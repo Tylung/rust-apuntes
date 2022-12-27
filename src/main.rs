@@ -1,13 +1,10 @@
 mod ownership {
-  pub mod intro;
-  pub mod borrowing;
+    pub mod slice;
 }
 
 // creando modulo 📂 para basics, extrallendo el archivo a ejecutar
-use ownership::intro::main as ownership;
-use ownership::borrowing::main as borrowing;
+use ownership::slice::main as slice;
 
 fn main() {
-    ownership();
-    borrowing();
+    slice();
 }
