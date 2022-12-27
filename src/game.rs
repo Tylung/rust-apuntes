@@ -58,8 +58,8 @@ pub fn init_game(opts: ArgMatches) {
 	
 }
 
-pub fn game(num: u8, init: u8, limit: u8) -> bool {
-  let mut num_secreto: u8 = num;
+pub fn game(num: u32, init: u32, limit: u32) -> bool {
+  let mut num_secreto: u32 = num;
 
   if num == 0 {
       let res = get_random_num(vec![init, limit]);
@@ -82,7 +82,7 @@ pub fn game(num: u8, init: u8, limit: u8) -> bool {
       // leemos la linea del prompt
       .expect("Fallo al leer el prompt");
 
-  let num_elegido: u8 = match num_elegido.trim().parse() {
+  let num_elegido: u32 = match num_elegido.trim().parse() {
       Ok(num) => num,
       Err(_) => {
           println!("{}", "No ingresaste un numero valido".red());
@@ -124,7 +124,7 @@ pub fn game(num: u8, init: u8, limit: u8) -> bool {
 
 
 
-pub fn infinite_game(init_param: u8, limit_param: u8) {
+pub fn infinite_game(init_param: u32, limit_param: u32) {
   loop {
       let mut resp = String::new();
       clear_scr();
